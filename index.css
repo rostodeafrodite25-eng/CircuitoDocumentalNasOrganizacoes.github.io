@@ -1,0 +1,89 @@
+html{
+  background-image: url();
+  background-size: cover;
+}
+#local {
+    position: relative;
+    padding: 20px;
+    margin: auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.blue {
+    color: #005a9e;
+}
+
+#texto1 {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+#texto {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 10px;
+    width: 90%;
+    font-size: 20px;
+    text-align: justify;
+    max-width: 600px;
+}
+
+button {
+    background-color: #61A8DF;
+    font-size: larger;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+#botao {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#titulo {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 60px; /* Tamanho fixo para telas grandes */
+    padding: 0;
+    line-height: 1.2;
+    font-weight: bold;
+    -webkit-text-stroke: 3px #61A8DF;
+    text-align: center;
+    max-width: 90vw; /* Limita a largura para não ultrapassar a tela */
+    overflow-wrap: break-word; /* Permite quebra de linha se necessário */
+}
+
+/* Ajuste para tablets e telas médias */
+@media (max-width: 768px) {
+    #titulo {
+        font-size: 7vw; /* Ajusta o tamanho da fonte em telas médias */
+        -webkit-text-stroke: 0.08em #61A8DF;
+    }
+}
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 480px) {
+    #titulo {
+        font-size: 6vw; /* Ajusta o tamanho da fonte em telas pequenas */
+        -webkit-text-stroke: 0.05em #61A8DF;
+    }
+}
+
+}
